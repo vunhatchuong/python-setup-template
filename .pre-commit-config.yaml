@@ -3,7 +3,7 @@
 
 # For the template repo only
 ci:
-    skip: [markdownlint-docker, hadolint-docker, docker-ggshield]
+    skip: [ggshield]
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -22,11 +22,11 @@ repos:
     rev: v2.2.0
     hooks:
     -   id: doctoc
--   repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.33.0
+-   repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.9
     hooks:
-    -   id: markdownlint-docker
-        args: [--disable, MD041, --]
+      - id: pymarkdown
+        args: [-d, MD041, scan, ./docs]
 -   repo: https://github.com/asottile/pyupgrade
     rev: v3.3.1
     hooks:
@@ -49,11 +49,11 @@ repos:
     hooks:
     -   id: mypy
         additional_dependencies: [types-all]
--   repo: https://github.com/hadolint/hadolint
-    rev: v2.12.1-beta
+-   repo: https://github.com/AleksaC/hadolint-py
+    rev: v2.12.0.2
     hooks:
-      - id: hadolint-docker
+      - id: hadolint
 -   repo: https://github.com/gitguardian/ggshield
     rev: v1.14.4
     hooks:
-    -   id: docker-ggshield
+    -   id: ggshield
