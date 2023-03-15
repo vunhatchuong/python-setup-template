@@ -3,7 +3,7 @@
 
 # For the template repo only
 ci:
-    skip: [hadolint-docker, docker-ggshield]
+    skip: [markdownlint-docker, hadolint-docker, docker-ggshield]
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
