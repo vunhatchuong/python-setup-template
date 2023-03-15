@@ -39,6 +39,11 @@ repos:
     rev: 6.0.0
     hooks:
     -   id: flake8
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.1.1
+    hooks:
+    -   id: mypy
+        additional_dependencies: [types-all]
 -   repo: https://github.com/hadolint/hadolint
     rev: v2.12.1-beta
     hooks:
