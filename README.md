@@ -31,7 +31,7 @@ Tested on:
 
 ## Installation
 
-Install dependancies using pip:
+Install dependencies using pip:
 
 ```bash
 pip install -r requirements.txt
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Make a copy of `.env.template` an change it to `.env` with appropriate informations.
+Make a copy of `.env.template` an change it to `.env` with appropriate information.
 
 ```bash
 python main.py
@@ -57,7 +57,7 @@ example = ""
 
 ## Development
 
-Install development depencies using pip:
+Install development dependencies using pip:
 
 ```bash
 pip install -r requirements-dev.txt
@@ -72,7 +72,7 @@ Install with `pip install pre-commit` and
 execute `pre-commit install` in the root folder.
 This will add a hook to the repository, which reformats files on every commit.
 
-To reformat files manuallly execute:
+To reformat files manually execute:
 
 ```bash
 pre-commit run --all-files
