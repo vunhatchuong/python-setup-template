@@ -1,6 +1,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/vunhatchuong123/python-setup-template/main.svg)](https://results.pre-commit.ci/latest/github/vunhatchuong123/python-setup-template/main)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/vunhatchuong/python-setup-template/main.svg)](https://results.pre-commit.ci/latest/github/vunhatchuong/python-setup-template/main)
 
+***Remember to change `pre-commit status`***
 # Project title
 
 Project description
