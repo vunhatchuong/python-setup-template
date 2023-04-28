@@ -23,11 +23,11 @@ repos:
     hooks:
     -   id: doctoc
 -   repo: https://github.com/jackdewinter/pymarkdown
-    rev: v0.9.9
+    rev: v0.9.11
     hooks:
       - id: pymarkdown
         pass_filenames: false
-        args: [-d, MD041, scan, -r, .]
+        args: [-d, "MD041,MD013", scan, ., ./docs]
 -   repo: https://github.com/asottile/pyupgrade
     rev: v3.3.1
     hooks:
@@ -58,3 +58,7 @@ repos:
     rev: v1.14.5
     hooks:
     -   id: ggshield
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.2.4
+    hooks:
+    -   id: codespell
