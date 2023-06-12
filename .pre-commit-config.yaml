@@ -4,6 +4,7 @@
 # For the template repo only
 ci:
     skip: [ggshield]
+    skip: [pymarkdown]
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
