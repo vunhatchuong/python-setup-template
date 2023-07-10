@@ -29,7 +29,7 @@ repos:
         pass_filenames: false
         args: [-d, "MD041, MD013", scan, -r, .]
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.8.0
+    rev: v3.9.0
     hooks:
     -   id: pyupgrade
         args: [--py310-plus]
