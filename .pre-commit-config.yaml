@@ -23,13 +23,13 @@ repos:
       hooks:
           - id: doctoc
     - repo: https://github.com/jackdewinter/pymarkdown
-      rev: v0.9.17
+      rev: v0.9.18
       hooks:
           - id: pymarkdown
             pass_filenames: false
             args: [-d, "MD041, MD013", scan, -r, .]
     - repo: https://github.com/astral-sh/ruff-pre-commit
-      rev: v0.3.3
+      rev: v0.3.4
       hooks:
           # Run the linter.
           - id: ruff
