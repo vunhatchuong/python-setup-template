@@ -1,7 +1,6 @@
 -r requirements.txt
-black
+ruff
 covdefaults
-flake8
 pre-commit
 pytest
 pytest-cov
