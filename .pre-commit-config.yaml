@@ -22,6 +22,11 @@ repos:
       rev: v2.2.0
       hooks:
           - id: doctoc
+    - repo: https://github.com/asottile/pyupgrade
+      rev: v3.15.2
+      hooks:
+          - id: pyupgrade
+            args: [--py310-plus]
     - repo: https://github.com/jackdewinter/pymarkdown
       rev: v0.9.18
       hooks:
