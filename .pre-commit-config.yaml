@@ -30,13 +30,13 @@ repos:
           - id: pyupgrade
             args: [--py310-plus]
     - repo: https://github.com/jackdewinter/pymarkdown
-      rev: v0.9.18
+      rev: v0.9.19
       hooks:
           - id: pymarkdown
             pass_filenames: false
             args: [-d, "MD041, MD013", scan, -r, .]
     - repo: https://github.com/astral-sh/ruff-pre-commit
-      rev: v0.4.1
+      rev: v0.4.4
       hooks:
           # Run the linter.
           - id: ruff
@@ -45,16 +45,16 @@ repos:
           - id: ruff-format
             args: [--target-version, py310]
     - repo: https://github.com/pre-commit/mirrors-mypy
-      rev: v1.9.0
+      rev: v1.10.0
       hooks:
           - id: mypy
             additional_dependencies: [types-all]
     - repo: https://github.com/AleksaC/hadolint-py
-      rev: v2.12.1-beta
+      rev: v2.12.1b3
       hooks:
           - id: hadolint
     - repo: https://github.com/gitguardian/ggshield
-      rev: v1.26.0
+      rev: v1.27.0
       hooks:
           - id: ggshield
     - repo: https://github.com/codespell-project/codespell
