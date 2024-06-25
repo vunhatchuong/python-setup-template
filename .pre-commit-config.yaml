@@ -36,7 +36,7 @@ repos:
             pass_filenames: false
             args: [-d, "MD041, MD013", scan, -r, .]
     - repo: https://github.com/astral-sh/ruff-pre-commit
-      rev: v0.4.9
+      rev: v0.4.10
       hooks:
           # Run the linter.
           - id: ruff
