@@ -25,7 +25,7 @@ repos:
       hooks:
           - id: doctoc
     - repo: https://github.com/asottile/pyupgrade
-      rev: v3.16.0
+      rev: v3.17.0
       hooks:
           - id: pyupgrade
             args: [--py310-plus]
@@ -36,7 +36,7 @@ repos:
             pass_filenames: false
             args: [-d, "MD041, MD013", scan, -r, .]
     - repo: https://github.com/astral-sh/ruff-pre-commit
-      rev: v0.5.4
+      rev: v0.5.5
       hooks:
           # Run the linter.
           - id: ruff
