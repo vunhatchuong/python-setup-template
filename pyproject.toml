@@ -1,0 +1,56 @@
+[project]
+name = "setup_template"
+authors = [{ name = "Vu Nhat Chuong", email = "ronnyvu321@gmail.com" }]
+description = "Python Project Template"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/vunhatchuong123/python_setup_template/tree/main#readme"
+Source = "https://github.com/vunhatchuong123/python_setup_template"
+Tracker = "https://github.com/vunhatchuong123/python_setup_template/issues"
+
+[tool.bandit]
+#exclude_dirs = ["build","dist","tests","scripts"]
+recursive = true
+#targets = "src"
+
+[tool.ruff]
+exclude = [
+  ".eggs",
+  ".git",
+  "__pycache__",
+  ".mypy_cache",
+  ".pants.d",
+  ".pyenv",
+  ".pytest_cache",
+  ".pytype",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".vscode",
+  "__pypackages__",
+  "_build",
+  "build",
+  "dist",
+  "site-packages",
+]
+
+[tool.coverage.run]
+plugins = "covdefaults"
+
+[tool.mypy]
+disallow_untyped_defs = true
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+show_error_codes = true
+exclude = ["__pycache__"]

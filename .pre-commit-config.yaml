@@ -16,10 +16,6 @@ repos:
           - id: debug-statements
           - id: requirements-txt-fixer
           - id: name-tests-test
-    - repo: https://github.com/asottile/setup-cfg-fmt
-      rev: v2.5.0
-      hooks:
-          - id: setup-cfg-fmt
     - repo: https://github.com/thlorenz/doctoc
       rev: v2.2.0
       hooks:
@@ -44,11 +40,18 @@ repos:
           # Run the formatter.
           - id: ruff-format
             args: [--target-version, py310]
+    - repo: https://github.com/pycqa/bandit
+      rev: 1.7.10
+      hooks:
+          - id: bandit
+            additional_dependencies:
+                - bandit[toml]
+            args:
+                - --configfile=pyproject.toml
     - repo: https://github.com/pre-commit/mirrors-mypy
       rev: v1.11.2
       hooks:
           - id: mypy
-            additional_dependencies: [types-all]
     - repo: https://github.com/AleksaC/hadolint-py
       rev: v2.12.1b3
       hooks:
