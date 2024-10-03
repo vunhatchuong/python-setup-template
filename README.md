@@ -2,6 +2,7 @@
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/vunhatchuong/python-setup-template/main.svg)](https://results.pre-commit.ci/latest/github/vunhatchuong/python-setup-template/main)
 
 ***Remember to change `pre-commit status`***
+
 # Project title
 
 Project description
@@ -64,7 +65,17 @@ Install development dependencies using pip:
 pip install -r requirements-dev.txt
 ```
 
-To ensure a standardized code style we use the formatter [black](https://github.com/ambv/black).
+Update `requirements` files:
+
+```bash
+pur -r requirements-dev.txt
+```
+
+Update `.pre-commit` hooks:
+
+```bash
+pre-commit autoupdate
+```
 
 ### Code Style
 
