@@ -16,8 +16,8 @@ Project description
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Security](#security)
 - [Configuration](#configuration)
+- [Deploy using Docker](#deploy-using-docker)
 - [Development](#development)
   - [Code Style](#code-style)
 
@@ -47,14 +47,30 @@ Make a copy of `.env.template` an change it to `.env` with appropriate informati
 python main.py
 ```
 
-## Security
-
 ## Configuration
 
 You can change value of variables inside `.env`.
 
 ```bash
 example = ""
+```
+
+## Deploy using Docker
+
+Docker will use `.env` values for some settings.
+
+Build the image
+
+```bash
+docker build -t {name} .
+```
+
+Run the image
+
+```bash
+docker run -p 3000:3000 {name}
+# Or
+docker compose -f docker-compose.yml up
 ```
 
 ## Development
