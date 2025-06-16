@@ -41,7 +41,7 @@ repos:
           - id: ruff-format
             args: [--target-version, py310]
     - repo: https://github.com/pycqa/bandit
-      rev: 1.8.3
+      rev: 1.8.4
       hooks:
           - id: bandit
             additional_dependencies:
