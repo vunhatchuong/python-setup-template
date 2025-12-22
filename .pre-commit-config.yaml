@@ -26,13 +26,13 @@ repos:
           - id: pyupgrade
             args: [--py310-plus]
     - repo: https://github.com/jackdewinter/pymarkdown
-      rev: v0.9.33
+      rev: v0.9.34
       hooks:
           - id: pymarkdown
             pass_filenames: false
             args: [-d, "MD041, MD013", scan, -r, .]
     - repo: https://github.com/astral-sh/ruff-pre-commit
-      rev: v0.14.8
+      rev: v0.14.10
       hooks:
           # Run the linter.
           - id: ruff
@@ -49,7 +49,7 @@ repos:
             args:
                 - --configfile=pyproject.toml
     - repo: https://github.com/pre-commit/mirrors-mypy
-      rev: v1.19.0
+      rev: v1.19.1
       hooks:
           - id: mypy
     - repo: https://github.com/AleksaC/hadolint-py
